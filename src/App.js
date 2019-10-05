@@ -11,7 +11,7 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    axios.get("/api/students").then(response => {
+    axios.get("http://localhost:4000/api/students").then(response => {
       console.log(response.data);
     });
   }
